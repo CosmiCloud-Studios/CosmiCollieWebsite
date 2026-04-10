@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systems Offline | CosmiCollie</title>
+    <style>
+        :root {
+            --bg-color: #0a0b10;
+            --accent-color: #4f6ef7;
+            --text-color: #e0e0e6;
+            --secondary-text: #888891;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Subtle background star effect */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            box-shadow: 10vw 20vh 1px #fff, 50vw 40vh 1px #fff, 80vw 10vh 1px #fff, 30vw 80vh 1px #fff, 70vw 70vh 1px #fff;
+            opacity: 0.3;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            filter: drop-shadow(0 0 10px var(--accent-color));
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        p {
+            color: var(--secondary-text);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .divider {
+            height: 1px;
+            width: 50px;
+            background: var(--accent-color);
+            margin: 1.5rem auto;
+            box-shadow: 0 0 10px var(--accent-color);
+        }
+
+        .signature {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            opacity: 0.9;
+        }
+
+        /* Simple breathing animation */
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+
+        .pulse-element {
+            animation: pulse 4s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon pulse-element">🔭</div>
+        <h1>Under Reconstruction</h1>
+        <p>The site is down at the moment.<br>We're currently redesigning the interface for a better experience.<br>ETA for fix: Genuinely, No idea.<br>For why?: Uhm... Good question.</p>
+        
+        <div class="divider"></div>
+        
+        <div class="signature">— The CosmiCollie</div>
+    </div>
+
+</body>
+</html>
