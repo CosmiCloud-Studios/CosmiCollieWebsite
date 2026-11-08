@@ -3,21 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#00ff88" />
+  <meta name="theme-color" content="#ff7eb6" />
   <title>The CosmiCollie | Page Not Found</title>
-  <link rel="icon" href="tsw.png" type="image/png" />
+  <link rel="icon" href="public/favicon.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --bg-1:#1a1a2e;
-      --bg-2:#16213e;
-      --bg-3:#0f0f23;
-      --accent:#00ff88;
-      --muted:#b8c5d1;
-      --glass: rgba(26,26,46,0.88);
+      --bg-1:#3b1836;
+      --bg-2:#21142f;
+      --bg-3:#100d20;
+      --accent:#ff7eb6;
+      --accent-2:#caa7ff;
+      --muted:#f8ddea;
+      --glass: rgba(52,25,55,0.88);
     }
 
     *{box-sizing:border-box}
@@ -41,7 +42,7 @@
       max-width:880px;
       background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
       border-radius:14px;
-      border:1px solid rgba(0,255,136,0.06);
+      border:1px solid rgba(255,126,182,0.22);
       padding:44px;
       text-align:center;
       box-shadow: 0 24px 60px rgba(0,0,0,0.6), 0 0 40px rgba(0,255,136,0.03) inset;
@@ -140,7 +141,7 @@
       animation:glitch-3 1.8s infinite steps(2,end);
     }
     p.lead .broken::after{
-      color:rgba(0,255,170,0.6);
+      color:rgba(202,167,255,0.6);
       transform:translate(2px,1px);
       clip-path: polygon(0 40%,100% 50%,100% 100%,0 100%);
       animation:glitch-4 2.4s infinite steps(2,end);
@@ -150,8 +151,8 @@
     .home-link{
       display:inline-block;
       margin-top:18px;
-      background:linear-gradient(135deg,var(--accent),#00cc6a);
-      color:#071124;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#26132e;
       padding:12px 18px;
       border-radius:10px;
       font-weight:700;
@@ -227,10 +228,10 @@
     </p>
 
     <p style="margin:18px 0 0;">
-    <a class="home-link" href="index.html" aria-label="Return to home">Click here to return Home.</a>
+    <a class="home-link" href="index.html" aria-label="Return to home">Return to The Cosmic Collie</a>
     </p>
 
-    <div class="mini-footer" aria-hidden="true">Made with 💚 by CosmiCollie</div>
+    <div class="mini-footer" aria-hidden="true">Made with care by The Cosmic Collie</div>
   </main>
 </body>
 </html>
