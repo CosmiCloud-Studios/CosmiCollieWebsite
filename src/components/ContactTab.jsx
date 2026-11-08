@@ -42,9 +42,9 @@ export default function ContactTab() {
       value: "@thecosmicollie",
       icon: MessageCircle,
       link: "https://discord.com/users/1407241036480118806", // fallback link format
-      color: "text-indigo-400",
-      bgHover: "hover:bg-indigo-500/10",
-      borderHover: "hover:border-indigo-500/30"
+      color: "text-pink-400",
+      bgHover: "hover:bg-pink-500/10",
+      borderHover: "hover:border-pink-500/30"
     }
   ];
 
@@ -52,7 +52,7 @@ export default function ContactTab() {
     <div className="h-full flex flex-col items-center justify-center py-8">
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold text-white mb-4">Let's Connect</h2>
-        <p className="text-slate-400 max-w-md mx-auto">
+        <p className="text-pink-400 max-w-md mx-auto">
           Whether you're looking for a moderator/admin, help making a server or just want a chat, Reach out!
         </p>
       </div>
@@ -66,19 +66,19 @@ export default function ContactTab() {
               href={contact.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex flex-col items-center p-8 rounded-2xl bg-slate-900/40 border border-slate-700/50 transition-all duration-300 group ${contact.bgHover} ${contact.borderHover}`}
+              className={`flex flex-col items-center p-8 rounded-2xl bg-pink-900/40 border border-pink-700/50 transition-all duration-300 group ${contact.bgHover} ${contact.borderHover}`}
             >
-              <div className={`p-4 rounded-full bg-slate-800/80 mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-2 ${contact.color}`}>
+              <div className={`p-4 rounded-full bg-pink-800/80 mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:-tranpink-y-2 ${contact.color}`}>
                 <Icon size={32} />
               </div>
-              <h3 className="text-xl font-semibold text-slate-200 mb-1">{contact.platform}</h3>
-              <p className="text-slate-400 font-mono text-sm">{contact.value}</p>
+              <h3 className="text-xl font-semibold text-pink-200 mb-1">{contact.platform}</h3>
+              <p className="text-pink-400 font-mono text-sm">{contact.value}</p>
             </a>
           );
         })}
       </div>
 
-      <div className="mt-12 text-slate-500 text-sm flex items-center gap-2">
+      <div className="mt-12 text-pink-500 text-sm flex items-center gap-2">
         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
         Available for new opportunities
       </div>

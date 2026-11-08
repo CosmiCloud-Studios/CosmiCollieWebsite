@@ -39,7 +39,7 @@ export default function SpaceBackground() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       stars.forEach((star) => {
-        ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
+        ctx.fillStyle = `rgba(255, 190, 229, ${star.opacity})`;
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
         ctx.fill();
@@ -74,9 +74,9 @@ export default function SpaceBackground() {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-0 bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-950">
+    <div className="fixed inset-0 z-0 bg-gradient-to-br from-[#120817] via-[#3b123d] to-[#16091d]">
       <canvas ref={canvasRef} className="absolute inset-0 z-10 opacity-60" />
-      <div className="absolute inset-0 z-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent"></div>
+      <div className="absolute inset-0 z-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-400/20 via-transparent to-transparent"></div>
     </div>
   );
 }

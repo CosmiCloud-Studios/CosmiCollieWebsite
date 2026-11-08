@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen text-slate-200 font-sans selection:bg-indigo-500/30 overflow-x-hidden">
+    <div className="relative min-h-screen text-rose-50 font-sans selection:bg-pink-400/30 overflow-x-hidden">
       <AnimatePresence>
         {isLoading && (
           <motion.div
@@ -46,23 +46,23 @@ function App() {
       <SpaceBackground />
 
       <div className="relative z-30 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8">
-        <div className="w-full max-w-4xl mx-auto backdrop-blur-md bg-slate-900/40 border border-slate-700/50 rounded-2xl shadow-2xl overflow-hidden flex flex-col min-h-[600px]">
+        <div className="w-full max-w-5xl mx-auto backdrop-blur-xl bg-[#2a102b]/70 border border-pink-200/20 rounded-[2rem] shadow-[0_24px_100px_rgba(190,24,93,0.22)] overflow-hidden flex flex-col min-h-[600px]">
 
           {/* Header & Navigation */}
-          <header className="border-b border-slate-700/50 bg-slate-900/50 p-4 sm:px-8 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <header className="border-b border-pink-200/10 bg-[#351331]/65 p-4 sm:px-8 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-5">
             <div className="flex items-center gap-4">
               <img
                 src="/profile.png"
-                alt="The CosmicCollie"
-                className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-indigo-400/50 shadow-lg object-cover"
+                alt="The Cosmic Collie"
+                className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-pink-300/70 shadow-[0_0_28px_rgba(244,114,182,0.35)] object-cover"
               />
               <div>
-                <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">The CosmicCollie</h1>
-                <p className="text-indigo-300 font-medium text-sm sm:text-base">Server Manager & Moderator</p>
+                <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight">The Cosmic Collie</h1>
+                <p className="text-pink-200 font-medium text-sm sm:text-base">Community builder · project lead · cosmic tinkerer</p>
               </div>
             </div>
 
-            <nav className="flex space-x-1 sm:space-x-2 bg-slate-950/50 p-1.5 rounded-xl border border-slate-800/50 overflow-x-auto max-w-full">
+            <nav className="flex space-x-1 sm:space-x-2 bg-[#1c0b23]/70 p-1.5 rounded-2xl border border-pink-200/10 overflow-x-auto max-w-full">
               {tabs.map((tab) => {
                 const isActive = activeTab === tab.id;
                 return (
@@ -72,11 +72,11 @@ function App() {
                     aria-label={`${tab.label} Tab`}
                     className={`flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-sm font-medium transition-all duration-200 whitespace-nowrap ${
                       isActive
-                        ? 'bg-indigo-500/20 text-indigo-300 shadow-sm'
-                        : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
+                        ? 'bg-pink-400/20 text-pink-100 shadow-[0_0_18px_rgba(244,114,182,0.18)]'
+                        : 'text-pink-100/60 hover:text-white hover:bg-pink-200/10'
                     }`}
                   >
-                    <FontAwesomeIcon icon={tab.icon} className={`w-4 h-4 ${isActive ? 'text-indigo-400' : 'opacity-70'}`} />
+                    <FontAwesomeIcon icon={tab.icon} className={`w-4 h-4 ${isActive ? 'text-pink-200' : 'opacity-70'}`} />
                     <span className="hidden sm:inline">{tab.label}</span>
                     <span className="sm:hidden">{tab.label}</span>
                   </button>
@@ -107,8 +107,8 @@ function App() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-8 text-slate-500 text-sm font-medium">
-          &copy; {new Date().getFullYear()} The CosmicCollie. All rights reserved.
+        <footer className="mt-8 text-pink-100/45 text-sm font-medium">
+          &copy; {new Date().getFullYear()} The Cosmic Collie · @CosmiCollie. All rights reserved.
         </footer>
       </div>
     </div>
