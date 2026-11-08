@@ -38,7 +38,7 @@ export default function ServicesTab() {
     <div className="h-full flex flex-col">
       <div className="mb-6 text-center">
         <h2 className="text-2xl font-bold text-white mb-2">Professional Services</h2>
-        <p className="text-slate-400 max-w-2xl mx-auto">
+        <p className="text-pink-400 max-w-2xl mx-auto">
           Leveraging years of experience in leading and building communities, I offer a range of services to help your server thrive.
         </p>
       </div>
@@ -49,15 +49,15 @@ export default function ServicesTab() {
           return (
             <div
               key={index}
-              className="bg-slate-800/40 border border-slate-700/50 p-5 rounded-xl hover:bg-slate-800/60 transition-colors group flex flex-col"
+              className="bg-pink-800/40 border border-pink-700/50 p-5 rounded-xl hover:bg-pink-800/60 transition-colors group flex flex-col"
             >
               <div className="flex items-center gap-3 mb-3">
-                <div className="p-2 bg-indigo-500/20 rounded-lg text-indigo-400 group-hover:bg-indigo-500/30 transition-colors">
+                <div className="p-2 bg-pink-500/20 rounded-lg text-pink-400 group-hover:bg-pink-500/30 transition-colors">
                   <Icon size={20} />
                 </div>
-                <h3 className="text-lg font-semibold text-slate-100">{service.title}</h3>
+                <h3 className="text-lg font-semibold text-pink-100">{service.title}</h3>
               </div>
-              <p className="text-slate-400 text-sm leading-relaxed flex-grow">
+              <p className="text-pink-400 text-sm leading-relaxed flex-grow">
                 {service.description}
               </p>
             </div>
@@ -65,15 +65,15 @@ export default function ServicesTab() {
         })}
       </div>
 
-      <div className="mt-6 pt-6 border-t border-slate-700/50 flex justify-center">
-        <div className="bg-indigo-600/20 border border-indigo-500/30 px-6 py-4 rounded-xl flex flex-col sm:flex-row items-center gap-4 w-full max-w-2xl">
+      <div className="mt-6 pt-6 border-t border-pink-700/50 flex justify-center">
+        <div className="bg-pink-600/20 border border-pink-500/30 px-6 py-4 rounded-xl flex flex-col sm:flex-row items-center gap-4 w-full max-w-2xl">
           <div className="text-center sm:text-left flex-grow">
             <h4 className="text-lg font-bold text-white">Interested in working together?</h4>
-            <p className="text-indigo-200 text-sm">Every community is unique. Let's discuss your specific needs.</p>
+            <p className="text-pink-200 text-sm">Every community is unique. Let's discuss your specific needs.</p>
           </div>
           <button
             onClick={() => document.querySelector('button[aria-label="Contact Tab"]')?.click()}
-            className="px-6 py-2.5 bg-indigo-500 hover:bg-indigo-600 text-white font-medium rounded-lg transition-colors shadow-lg shadow-indigo-500/25 whitespace-nowrap"
+            className="px-6 py-2.5 bg-pink-500 hover:bg-pink-600 text-white font-medium rounded-lg transition-colors shadow-lg shadow-pink-500/25 whitespace-nowrap"
           >
             Contact to Inquire
           </button>

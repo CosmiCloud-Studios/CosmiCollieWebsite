@@ -13,7 +13,7 @@ const stars = Array.from({ length: 100 }).map((_, i) => ({
 const LoadingScreen = () => {
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#030014] overflow-hidden"
+      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#16091d] overflow-hidden"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 1, ease: "easeInOut" } }}
     >
@@ -49,7 +49,7 @@ const LoadingScreen = () => {
       <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 flex items-center justify-center mb-12">
         {/* Deep space glow */}
         <motion.div
-          className="absolute inset-0 rounded-full bg-indigo-600/20 blur-[80px]"
+          className="absolute inset-0 rounded-full bg-pink-500/20 blur-[80px]"
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         />
@@ -58,7 +58,7 @@ const LoadingScreen = () => {
         {[...Array(4)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute rounded-full border border-indigo-500/30"
+            className="absolute rounded-full border border-pink-300/30"
             style={{
               width: `${(i + 1) * 25}%`,
               height: `${(i + 1) * 25}%`,
@@ -108,7 +108,7 @@ const LoadingScreen = () => {
         Loading
       </motion.h1>
       <motion.p
-        className="relative z-10 mt-4 text-indigo-300/60 tracking-widest text-xs md:text-sm uppercase"
+        className="relative z-10 mt-4 text-pink-200/70 tracking-widest text-xs md:text-sm uppercase"
         animate={{ opacity: [0.2, 0.8, 0.2] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 1 }}
       >

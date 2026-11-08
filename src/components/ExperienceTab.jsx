@@ -3,7 +3,7 @@ import { Building2, Calendar } from 'lucide-react';
 const experiences = [
   {
     role: "Head of Studio",
-    company: "CosmiCollie Studios (Fka Howlz Digital Studios)",
+    company: "CosmiCollie Projects",
     period: "2024 — Present",
     description: "Established and directed a creative studio dedicated to developing and organizing various projects. Managed the entire portfolio, overseeing concept development, resource allocation, and project lifecycle management.",
     skills: ["Studio Management", "Project Portfolio", "Creative Direction"]
@@ -80,25 +80,25 @@ export default function ExperienceTab() {
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="bg-slate-800/40 border border-slate-700/50 rounded-xl p-5 hover:bg-slate-800/60 hover:border-indigo-500/30 transition-all group"
+            className="bg-pink-800/40 border border-pink-700/50 rounded-xl p-5 hover:bg-pink-800/60 hover:border-pink-500/30 transition-all group"
           >
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
               <div>
-                <h3 className="text-xl font-bold text-slate-100 group-hover:text-indigo-300 transition-colors">
+                <h3 className="text-xl font-bold text-pink-100 group-hover:text-pink-300 transition-colors">
                   {exp.role}
                 </h3>
-                <div className="flex items-center gap-2 text-indigo-400/80 font-medium text-sm mt-1">
+                <div className="flex items-center gap-2 text-pink-400/80 font-medium text-sm mt-1">
                   <Building2 size={14} />
                   <span>{exp.company}</span>
                 </div>
               </div>
-              <div className="flex items-center gap-1.5 text-slate-400 text-sm whitespace-nowrap bg-slate-900/50 px-3 py-1 rounded-full border border-slate-700/50 w-fit">
+              <div className="flex items-center gap-1.5 text-pink-400 text-sm whitespace-nowrap bg-pink-900/50 px-3 py-1 rounded-full border border-pink-700/50 w-fit">
                 <Calendar size={12} />
                 <span>{exp.period}</span>
               </div>
             </div>
 
-            <p className="text-slate-300 text-sm leading-relaxed mb-4">
+            <p className="text-pink-300 text-sm leading-relaxed mb-4">
               {exp.description}
             </p>
 
@@ -106,7 +106,7 @@ export default function ExperienceTab() {
               {exp.skills.map((skill, sIndex) => (
                 <span
                   key={sIndex}
-                  className="px-2 py-1 bg-indigo-950/30 text-indigo-200 text-xs rounded-md border border-indigo-900/40"
+                  className="px-2 py-1 bg-pink-950/30 text-pink-200 text-xs rounded-md border border-pink-900/40"
                 >
                   {skill}
                 </span>
